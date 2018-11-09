@@ -1,0 +1,14 @@
+<br>
+<div class="container">
+  <div *ngIf="recipesArr?.length">
+    <h2 class="text-center">List Of versions</h2>
+  </div>
+  <br>
+  <div *ngIf="!recipesArr?.length">
+    <h2 class="text-center text-danger">Sorry! there are no old versions of this document</h2>
+  </div>
+  <div *ngFor="let item of recipesArr">
+    <app-version-view [item]="item"></app-version-view>
+  </div>
+</div>
+

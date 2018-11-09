@@ -1,0 +1,7 @@
+<div *ngFor="let recipe of recipes">
+  <app-recipe (emitRecipeToRemove)="receiveRecipeToRemove($event)" [recipe]="recipe"></app-recipe>
+</div>
+<div>
+  <app-add-recipe (emitRecipe)="receiveRecipe($event)" ></app-add-recipe>
+</div>
+

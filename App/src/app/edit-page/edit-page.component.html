@@ -1,0 +1,11 @@
+<div class="container field">
+  <h2 class="text-center">You can edit Recipe</h2>
+  <form class="form-group" #form="ngForm" (submit)="sendNewFormData(form)">
+    <input #name [ngModel]="editRecipe?.name" class="form-control" name="name" type="text" placeholder="name">
+    <br>
+    <textarea #description rows="7" [ngModel]="editRecipe?.description" class="form-control" name="description" type="text" placeholder="description"></textarea>
+    <br>
+    <br>
+    <input class="btn btn-success" type="submit" style="margin-right: 0; display: block; margin-left: auto">
+  </form>
+</div>

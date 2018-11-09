@@ -1,0 +1,12 @@
+<div class="container field">
+  <h2 class="text-center">You can add your own recipe</h2>
+  <form class="form-group" #form="ngForm" (submit)="sendForm(form)">
+    <input ngModel class="form-control" name="name" type="text" placeholder="name">
+    <br>
+    <textarea rows="7" ngModel class="form-control" name="description" type="text" placeholder="description"></textarea>
+    <br>
+    <br>
+    <input class="btn btn-success" type="submit">
+  </form>
+</div>
+

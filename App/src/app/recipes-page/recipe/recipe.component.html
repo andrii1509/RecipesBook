@@ -1,0 +1,13 @@
+
+<div #container class="container recipeItem">
+  <h2 class="text-center">{{recipe?.name}}</h2>
+  <br>
+  <p>{{recipe?.description}}</p>
+  <br>
+  <p class="text-right">{{recipe?.date | date:'medium'}}</p>
+  <div class="buttonContainer">
+    <button class="btn btn-secondary" (click)="changeRecipe()">Edit</button>
+    <button class="btn btn-secondary" (click)="watchVersions()">All Versions</button>
+    <button class="btn btn-danger" (click)="removeRecipe()">Remove</button>
+  </div>
+</div>

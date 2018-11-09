@@ -1,0 +1,14 @@
+.recipeItem{
+  margin: 20px;
+  border : 1px solid black;
+  padding: 40px;
+  box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.61);
+}
+.btn{
+  margin: 10px;
+}
+.buttonContainer{
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap
+}
